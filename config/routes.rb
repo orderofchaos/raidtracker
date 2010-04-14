@@ -1,4 +1,6 @@
 Raidtracker::Application.routes.draw do |map|
+  
+  resources :zones
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

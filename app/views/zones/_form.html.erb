@@ -1,0 +1,9 @@
+<%= form_for(@zone) do |f| %>
+  <%= f.error_messages %>
+
+  <%= f.text_field :name %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
