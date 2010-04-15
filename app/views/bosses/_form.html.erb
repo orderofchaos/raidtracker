@@ -2,6 +2,7 @@
   <%= f.error_messages %>
 
   <%= f.text_field :name %>
+  <%= f.collection_select(:zone_id, Zone.all, :id, :name) %>
 
   <div class="actions">
     <%= f.submit %>

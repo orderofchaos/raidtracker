@@ -2,13 +2,15 @@
 
 <table>
   <tr>
-    <th></th>
-    <th></th>
+    <th>Name</th>
+    <th>Zone</th>
     <th></th>
   </tr>
 
 <% @bosses.each do |boss| %>
   <tr>
+    <td><%= boss.name %></td>
+    <td><%= boss.zone.name %></td>
     <td><%= link_to 'Show', boss %></td>
     <td><%= link_to 'Edit', edit_boss_path(boss) %></td>
     <td><%= link_to 'Destroy', boss, :confirm => 'Are you sure?', :method => :delete %></td>
