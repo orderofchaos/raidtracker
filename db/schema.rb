@@ -9,7 +9,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100414164744) do
+ActiveRecord::Schema.define(:version => 20100415122221) do
+
+  create_table "bosses", :force => true do |t|
+    t.string   "name"
+    t.integer  "zone_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "zones", :force => true do |t|
     t.string   "name"
