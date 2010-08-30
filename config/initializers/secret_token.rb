@@ -2,6 +2,6 @@
 
 # Your secret key for verifying the integrity of signed cookies.
 # If you change this key, all old signed cookies will become invalid!
-# Make sure the secret is at least 30 characters and all random, 
+# Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Rails.application.config.cookie_secret = 'd6a806619e59bc18caa197780ad3d118dd0672e82174fa0d93544989171a343e93774c370b31329654eb237d31d22b30db71f87ad3d96ba0faea0d83db82a5f8'
+Raidtracker::Application.config.secret_token = '599ac8177dbe4c41f0fc43eb1d858f9f09f60cee1428f7abdec5e6c3da5c6d7a043ccfc7b39f1045f8c00231625b1e01a7d182f38e41edc046e6b3b15b454df7'
